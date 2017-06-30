@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Gallery</title>
+    <!-- Stylesheet -->
+    <link rel = "stylesheet" type = "text/css" href = "css/output.css" />
   </head>
   <body>
-    <div class="row" style="margin-bottom:128px">
-
-    @foreach ($filenames as $filename)
-      <div class="third">
-        <img src="../assets/gallery/{{$filename}}" style="width:100%">
+    <div class="row">
+      <div class="column">
+        @foreach ($gallery as $image)
+          <div class="gallery-image-container">
+            <img class="gallery-image" src="../assets/gallery/{{ $image->filename }}">
+          </div>
+        @endforeach
       </div>
-    @endforeach
-
     </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: url("../assets/welcome/welcome_background.jpg") no-repeat center center fixed;
+  background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,5 +50,11 @@ body {
         background-color: #757575; }
         body .page-container .sub-headers .sub-title:hover h3 a {
           color: #DADFE1; }
+
+body .gallery-image-container {
+  width: 100%; }
+  body .gallery-image-container .gallery-image {
+    height: auto;
+    max-width: 100%; }
 
 /*# sourceMappingURL=output.css.map */

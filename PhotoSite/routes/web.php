@@ -25,13 +25,9 @@ Route::get('/video', function () {
 
 Route::get('/gallery', function () {
 
-  $filenames = [
-    'GT86-1.jpg',
-    'IMG_3537.jpg',
-    'IMG_3662.jpg',
-  ];
-  
-    return view('gallery', compact('filenames'));
+    $gallery = DB::table('gallery')->get();
+
+    return view('gallery', compact('gallery'));
 });
 
 Route::get('/graphics', function () {

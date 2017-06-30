@@ -10,7 +10,7 @@
     <link rel = "stylesheet" type = "text/css" href = "css/output.css" />
   </head>
 
-  <body>
+  <body style="background: url(../assets/welcome/{{ ----- }})">
     <div class="page-container">
       <div class="title"
         <h1>Zack Beveridge</h1>

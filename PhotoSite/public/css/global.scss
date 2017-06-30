@@ -4,18 +4,18 @@
 // WELCOME BLADE STYLING
 body {
   margin: 0;
-  background: url("../assets/welcome/welcome_background.jpg") no-repeat center center fixed;
+  background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
-  .page-container{
+  .page-container {
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
 
-    .title{
+    .title {
       padding-top: 20%;
       text-align: center;
       text-transform: uppercase;
@@ -24,12 +24,12 @@ body {
       color: #ECF0F1;
     }
 
-    .sub-headers{
+    .sub-headers {
       display: flex;
       justify-content: center;
       padding-top: 25px;
 
-      .sub-title{
+      .sub-title {
         transition: background-color 0.7s ease;
         width: 170px;
         height: 60px;
@@ -58,14 +58,26 @@ body {
           }
         }
       }
-      .sub-title:hover{
+      .sub-title:hover {
         background-color: #757575;
-        h3{
-          a{
+        h3 {
+          a {
             color: #DADFE1;
           }
         }
       }
+    }
+  }
+}
+
+
+//GALLERY VIEW STYLING
+body {
+  .gallery-image-container {
+    width: 100%;
+    .gallery-image {
+      height: auto;
+      max-width: 100%;
     }
   }
 }
