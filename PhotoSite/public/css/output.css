@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background: url("../assets/welcome/welcome_background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  body .page-container {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2); }
+    body .page-container .title {
+      padding-top: 20%;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 5em;
+      color: #ECF0F1; }
+    body .page-container .sub-headers {
+      display: flex;
+      justify-content: center;
+      padding-top: 25px; }
+      body .page-container .sub-headers .sub-title {
+        transition: background-color 0.7s ease;
+        width: 170px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: #ECF0F1;
+        opacity: 0.9;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        body .page-container .sub-headers .sub-title h3 {
+          margin: 0; }
+          body .page-container .sub-headers .sub-title h3 a, body .page-container .sub-headers .sub-title h3 a:visited, body .page-container .sub-headers .sub-title h3 a:hover {
+            text-decoration: none;
+            decoration: none;
+            display: block;
+            color: #757575;
+            position: absolute;
+            line-height: 60px;
+            height: 60px;
+            width: 170px; }
+      body .page-container .sub-headers .sub-title:hover {
+        background-color: #757575; }
+        body .page-container .sub-headers .sub-title:hover h3 a {
+          color: #DADFE1; }
+
+/*# sourceMappingURL=output.css.map */
