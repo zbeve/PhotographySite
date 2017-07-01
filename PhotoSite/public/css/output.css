@@ -51,10 +51,12 @@ body {
         body .page-container .sub-headers .sub-title:hover h3 a {
           color: #DADFE1; }
 
-body .gallery-image-container {
-  width: 100%; }
-  body .gallery-image-container .gallery-image {
-    height: auto;
-    max-width: 100%; }
+body {
+  background-color: #757575; }
+  body .row .gallery-image-container {
+    padding-bottom: 5px; }
+    body .row .gallery-image-container .gallery-image {
+      height: auto;
+      max-width: 100%; }
 
 /*# sourceMappingURL=output.css.map */

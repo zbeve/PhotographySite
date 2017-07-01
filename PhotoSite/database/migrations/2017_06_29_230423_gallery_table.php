@@ -18,6 +18,7 @@ class GalleryTable extends Migration
             $table->string('name');
             $table->string('filename');
             $table->text('description');
+            $table->integer('column');
             $table->timestamps();
         });
     }

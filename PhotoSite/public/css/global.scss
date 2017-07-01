@@ -72,12 +72,24 @@ body {
 
 
 //GALLERY VIEW STYLING
-body {
-  .gallery-image-container {
-    width: 100%;
-    .gallery-image {
-      height: auto;
-      max-width: 100%;
+ body {
+  background-color: #757575;
+  .row {
+    #column-1 {
+
+    }
+    #column-2 {
+
+    }
+    #column-3 {
+
+    }
+    .gallery-image-container {
+      padding-bottom: 5px;
+      .gallery-image {
+        height: auto;
+        max-width: 100%;
+      }
     }
   }
 }
