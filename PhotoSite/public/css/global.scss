@@ -3,66 +3,86 @@
 
 // WELCOME BLADE STYLING
 body {
-  margin: 0;
-  background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
   .page-container {
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
 
-    .title {
-      padding-top: 20%;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 5em;
-      color: #ECF0F1;
+    // Carousel Fade Function
+    .carousel-fade {
+      .carousel-inner {
+          // Full Page Images At All Sizes - Check scripts.js
+          .item {
+            transition-property: opacity;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .item,
+          .active.left,
+          .active.right {
+              opacity: 0;
+          }
+          .active,
+          .next.left,
+          .prev.right {
+              opacity: 1;
+          }
+          .next,
+          .prev,
+          .active.left,
+          .active.right {
+              left: 0;
+              transform: translate3d(0, 0, 0);
+          }
+      }
+      .carousel-control {
+        position: absolute;
+        z-index: 1;
+      }
     }
 
-    .sub-headers {
-      display: flex;
-      justify-content: center;
-      padding-top: 25px;
-
-      .sub-title {
-        transition: background-color 0.7s ease;
-        width: 170px;
-        height: 60px;
-        border-radius: 5px;
-        background-color: #ECF0F1;
-        opacity: 0.9;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Raleway', sans-serif;
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        h3 {
-          margin: 0;
-          a, a:visited, a:hover {
-            text-decoration: none;
-            decoration: none;
-            display: block;
-            color: #757575;
-            position: absolute;
-            line-height: 60px;
-            height: 60px;
-            width: 170px;
-          }
+    .welcome-wrapper {
+      position: absolute;
+      width: 100%;
+      .title {
+        position: relative;
+        z-index: 10;
+        h1{
+          padding-top: 10%;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 5em;
+          color: #ECF0F1;
         }
       }
-      .sub-title:hover {
-        background-color: #757575;
-        h3 {
-          a {
-            color: #DADFE1;
+      .sub-headers {
+        .sub-title {
+          z-index: 5;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Raleway', sans-serif;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          h3 {
+            transition: background-color 0.7s ease;
+            border-radius: 5px;
+            background-color: #ECF0F1;
+            opacity: 0.9;
+            margin: 0;
+            a, a:visited {
+              text-decoration: none;
+              decoration: none;
+              color: #757575;
+              line-height: 60px;
+            }
+            &:hover {
+              background-color: #757575;
+                a {
+                  color: #DADFE1;
+                }
+            }
           }
         }
       }

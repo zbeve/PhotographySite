@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $welcome = DB::table('welcome')->get();
+
+    return view('welcome', compact('welcome'));
 });
 
 Route::get('/about', function () {
