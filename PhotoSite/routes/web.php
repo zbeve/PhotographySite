@@ -15,24 +15,24 @@ Route::get('/', function () {
 
     $welcome = DB::table('welcome')->get();
 
-    return view('welcome', compact('welcome'));
+    return view('layouts.home', compact('welcome'));
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/video', function () {
-    return view('video');
-});
-
-Route::get('/gallery', function () {
+Route::get('/photography', function () {
 
     $gallery = DB::table('gallery')->get();
 
-    return view('gallery', compact('gallery'));
+    return view('layouts.photography', compact('gallery'));
+});
+
+Route::get('/about', function () {
+    return view('layouts.default');
+});
+
+Route::get('/video', function () {
+    return view('layouts.default');
 });
 
 Route::get('/graphics', function () {
-    return view('graphics');
+    return view('layouts.default');
 });

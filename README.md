@@ -15,9 +15,11 @@
 -sass --watch global.scss:output.css
 ```
 ### MAMP
+```
 -80
 -5.6
 -Apache
 -Public
+```
 
 Using SQL Pro to access tables
