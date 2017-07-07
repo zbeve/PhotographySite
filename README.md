@@ -1,4 +1,4 @@
-## PhotographySite
+## PhotographySite README
 
 ### MYSQL COMMAND LINE
 ```
@@ -7,7 +7,7 @@
 -use database name;
 -show tables;
 -php artisan migrate
-- php artisan migrate:refresh
+-php artisan migrate:refresh
 ```
 ### SASS
 ```
@@ -15,9 +15,9 @@
 -sass --watch global.scss:output.css
 ```
 ### MAMP
-80
-5.6
-Apache
-Public
+-80
+-5.6
+-Apache
+-Public
 
 Using SQL Pro to access tables
