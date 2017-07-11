@@ -31,14 +31,16 @@ $('#welcome-carousel').imagesLoaded( function() {
   $('#welcome-container').addClass('ready');
 });
 
-function getRandom() {
-  return Math.floor((Math.random()*100) + 1);
-};
+var v = $(".gallery-image-container"), cur = 0;
+for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
 
-var $imageCount = $('.gallery-image-container').length;
-
-if (!$('.gallery-image-container').hasClass('active')) {
-  
+function fadeIn() {
+  v.eq(cur++).addClass('active');
+  if(cur != v.length) setTimeout(fadeIn, 50);
 }
+
+$('#gallery-container').imagesLoaded( function() {
+  fadeIn();
+});
 
 });

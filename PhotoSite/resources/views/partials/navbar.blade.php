@@ -11,7 +11,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/gallery">Photography</a></li>
+        <li><a href="/photography">Photography</a></li>
         <li><a href="/graphics">Graphics</a></li>
         <li><a href="/video">Video</a></li>
         <li><a href="/about">About</a></li>
