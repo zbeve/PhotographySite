@@ -25,14 +25,21 @@ Route::get('/photography', function () {
     return view('layouts.photography', compact('gallery'));
 });
 
-Route::get('/about', function () {
+Route::get('/graphics', function () {
+
     return view('layouts.default');
 });
 
 Route::get('/video', function () {
-    return view('layouts.default');
+
+    $videos = DB::table('videos')->get();
+
+    return view('layouts.video', compact('videos'));
 });
 
-Route::get('/graphics', function () {
-    return view('layouts.default');
+Route::get('/about', function () {
+
+    $about = DB::table('about')->get();
+
+    return view('layouts.about', compact('about'));
 });

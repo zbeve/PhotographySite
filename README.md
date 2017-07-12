@@ -17,9 +17,13 @@
 ### MAMP
 ```
 -80
--5.6
+-80
+-3360
+-5.6.30
+-Cache Off
 -Apache
 -Public
+-MySQL Active Version 5.6.35
 ```
 
 Using SQL Pro to access tables

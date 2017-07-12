@@ -7,21 +7,29 @@
         <div class="container">
           <div class="sub-headers row">
 
-            <div class="sub-title col-md-3">
-              <h3><a href="/photography">Photography</a></h3>
-            </div>
+            <a href="/photography">
+              <div class="sub-title col-md-3">
+                <h3>Photography</h3>
+              </div>
+            </a>
 
-            <div class="sub-title col-md-3" href="/graphics">
-              <h3><a href="/graphics">Graphics</a></h3>
-            </div>
+            <a href="/graphics">
+              <div class="sub-title col-md-3">
+                <h3>Graphics</h3>
+              </div>
+            </a>
 
-            <div class="sub-title col-md-3">
-              <h3><a href="/video">Video</a></h3>
-            </div>
+            <a href="/video">
+              <div class="sub-title col-md-3">
+                <h3>Video</h3>
+              </div>
+            </a>
 
-            <div class="sub-title col-md-3">
-              <h3><a href="/about">About</a></h3>
-            </div>
+            <a href="/about">
+              <div class="sub-title col-md-3">
+                <h3>About</h3>
+              </div>
+            </a>
 
           </div>
         </div>
