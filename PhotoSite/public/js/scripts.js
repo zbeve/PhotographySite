@@ -17,15 +17,31 @@ $(window).on('resize', function (){
 });
 
 // GALLERY ISOTOPE PLUGIN FOR RESPONSIVE DISPLAY
-$('#column-1').isotope({
+$('#grid').isotope({
   itemSelector: '.gallery-image-container',
+  layoutMode: 'masonry',
   masonry: {
-    columnWidth: '.gallery-image-container'
+    isFitWidth: true,
+    // columnWidth: '.gallery-image-container'
   }
 });
 
 $('#column-1').imagesLoaded( function() {
-  $('#column-1').isotope('layout');
+  $('#grid').isotope('layout');
+});
+
+// GRAPHICS PAGE ISOTOPE
+$('#graphics-grid').isotope({
+  itemSelector: '.graphics-image-container',
+  layoutMode: 'masonry',
+  masonry: {
+    isFitWidth: true,
+    columnWidth: '.graphics-image-container'
+  }
+});
+
+$('#g-column-1').imagesLoaded( function() {
+  $('#grphics-grid').isotope('layout');
 });
 
 // LOAD HOMEPAGE IMAGES BEFORE DISPLAY
@@ -44,6 +60,19 @@ function fadeIn() {
 
 $('#gallery-container').imagesLoaded( function() {
   fadeIn();
+});
+
+// GRAPHICS RANDOM FADE IN
+var g = $(".graphics-image-container"), curr = 0;
+for(var q, p, t = g.length; t; q = parseInt(Math.random() * t), p = g[--t], g[t] = g[q], g[q] = p);
+
+function fadeInGra() {
+  g.eq(curr++).addClass('active');
+  if(curr != g.length) setTimeout(fadeInGra, 300);
+}
+
+$('#graphics-container').imagesLoaded( function() {
+  fadeInGra();
 });
 
 // IFRAME API

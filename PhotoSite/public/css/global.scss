@@ -236,7 +236,7 @@ body {
         }
         .image-wrapper {
           .gallery-image {
-            max-width: 100%;
+            max-width: 370px;
             height: auto;
             border-width: 2px;
             border-color: white;
@@ -246,6 +246,107 @@ body {
       }
     }
   }
+}
+
+// GRAPHICS STYLING
+body {
+ background-color: $Light_Grey;
+ .container {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 25px;
+   .row {
+     #g-column-1{
+      //  float: none;
+      //  margin: 0 auto 20px;
+     }
+     .graphics-image-container {
+       float: none;
+       max-width: 900px;
+       margin: 0 10px 0 10px;
+       position: relative;
+       margin-bottom: 5px;
+       text-align: center;
+       text-transform: uppercase;
+       font-family: 'Raleway', sans-serif;
+       transition: opacity 0.5s ease-in-out;
+       position: relative;
+       background-color: $Light_Grey;
+       opacity: 0;
+       visibility: hidden;
+       @media (max-width: 1100px){
+         max-width: 800px;
+       }
+       @media (max-width: 900px){
+         max-width: 700px;
+       }
+       @media (max-width: 770px){
+         max-width: 500px;
+       }
+       @media (max-width: 600px){
+         max-width: 335px;
+       }
+       h1 {
+         color: $Off_White;
+         position: absolute;
+         font-size: 50px;
+         top: 50%;
+         right: 0;
+         left: 0;
+         margin: 0 auto;
+         transform: translateY(-50%);
+         -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+         opacity: 0;
+         transition: opacity 0.7s ease;
+       }
+       &.active {
+         visibility: visible;
+         opacity: 1;
+         h1 {
+           opacity: 0;
+           visibility: hidden;
+         }
+         &:hover{
+           h1{
+             position: absolute;
+             z-index: 2;
+             opacity: 1;
+             visibility: visible;
+           }
+           .graphics-shell:after {
+             opacity: 0.7;
+             background-color: $Black;
+             z-index: 1;
+           }
+         }
+       }
+       .graphics-shell:after {
+         top: 0;
+         left: 0;
+         z-index: 0;
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         content: '';
+         opacity: 0;
+         transition: opacity 0.7s ease;
+       }
+       a {
+         display: inline-block;
+         position: absolute;
+         z-index: 10;
+         width: 100%;
+         height: 100%;
+       }
+       .design {
+         // height: auto;
+         max-width: 100%;
+       }
+     }
+   }
+ }
 }
 
 // NAVBAR STYLING

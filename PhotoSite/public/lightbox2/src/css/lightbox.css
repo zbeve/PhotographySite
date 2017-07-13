@@ -174,10 +174,10 @@ body.lb-disable-scrolling {
 
 .lb-data .lb-caption {
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
   font-size: 13px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1em;
+  white-space: pre;
 }
 
 .lb-data .lb-caption a {

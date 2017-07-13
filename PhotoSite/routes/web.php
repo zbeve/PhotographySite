@@ -27,7 +27,9 @@ Route::get('/photography', function () {
 
 Route::get('/graphics', function () {
 
-    return view('layouts.default');
+    $graphics = DB::table('graphics')->get();
+
+    return view('layouts.graphics', compact('graphics'));
 });
 
 Route::get('/video', function () {

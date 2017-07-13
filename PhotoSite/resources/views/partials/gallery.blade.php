@@ -5,7 +5,7 @@
         <div class="gallery-image-container" id="item-{{ $key }}">
             <h1>{{ $image->name }}</h1>
             <div class="hover-shell">
-              <a href="../assets/gallery/{{ $image->filename }}" data-lightbox="gallery" data-title="{{ $image->name }}"></a>
+              <a href="../assets/gallery/{{ $image->filename }}" data-lightbox="gallery" data-title="{{ $image->name }}  -  {{ $image->size }}"></a>
               <img class="gallery-image" src="../assets/gallery/{{ $image->filename }}">
             </div>
         </div>
