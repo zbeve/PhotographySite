@@ -1,13 +1,13 @@
 <div class="about-content">
   <div class="container">
-  @foreach ($about as $key=>$content)
+  @foreach ($content as $key=>$item)
     <div class="row">
-      <div class="col-md-7 text-wrapper">
+      <div class="col-xs-7 text-wrapper">
         <h1 class="about-header">About Me</h1>
-        <h3 class="about-text">{{ $content->summary }}</h3>
+        <h3 class="about-text">{{ $item->summary }}</h3>
       </div>
-      <div class="col-md-5 image-wrapper">
-        <img class="gallery-image" src="../assets/about/{{ $content->picture }}">
+      <div class="col-xs-5 image-wrapper">
+        <img class="gallery-image" src="../assets/about/{{ $item->picture }}">
       </div>
     </div>
   @endforeach

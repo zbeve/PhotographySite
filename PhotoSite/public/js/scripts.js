@@ -75,15 +75,38 @@ $('#graphics-container').imagesLoaded( function() {
   fadeInGra();
 });
 
-// IFRAME API
-// function onPlayerReady(event) {
-//     event.target.setPlaybackQuality('hd1080');
-// }
-// function onPlayerStateChange(event) {
-//     if (event.data == YT.PlayerState.BUFFERING) {
-//         event.target.setPlaybackQuality('hd720');
-//     }
-// }
+
+$('#social-feed').slick({
+  dots: true,
+  infinite: true,
+  speed: 2000,
+  centerMode: true,
+  variableWidth: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
 
 });

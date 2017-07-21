@@ -39,9 +39,22 @@ Route::get('/video', function () {
     return view('layouts.video', compact('videos'));
 });
 
-Route::get('/about', function () {
+Route::get('/about', 'HomeController@about');
 
-    $about = DB::table('about')->get();
+// Generate a Instagram login URL to get Token
+Route::get('/instagram/login', function() {
+  $ins = App::make(App\Helpers\Instagram::class);
+  $scope = array('public_content');
+  $login_url = $ins->getLoginUrl($scope);
+  echo '<a href="' . $login_url . '">Login with Instagram</a>';
+});
 
-    return view('layouts.about', compact('about'));
+// Callback Instagram to get Token
+Route::get('/instagram/callback', function() {
+  $ins = App::make(App\Helpers\Instagram::class);
+  $code = $_GET['code'];
+  if(!empty($code)) {
+    $data = $ins->getOAuthToken($code, true);
+    dd($data);
+  }
 });
