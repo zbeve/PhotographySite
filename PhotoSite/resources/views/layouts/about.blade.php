@@ -3,5 +3,6 @@
 @section('content')
 
 @include('partials.aboutme')
+@include('partials.instafeed')
 
 @endsection

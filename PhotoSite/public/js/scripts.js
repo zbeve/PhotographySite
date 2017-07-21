@@ -50,7 +50,7 @@ $('#welcome-carousel').imagesLoaded( function() {
 });
 
 // GALLERY RANDOM FADE IN
-var v = $(".gallery-image-container"), cur = 0;
+var v = $('.gallery-image-container'), cur = 0;
 for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
 
 function fadeIn() {
@@ -63,7 +63,7 @@ $('#gallery-container').imagesLoaded( function() {
 });
 
 // GRAPHICS RANDOM FADE IN
-var g = $(".graphics-image-container"), curr = 0;
+var g = $('.graphics-image-container'), curr = 0;
 for(var q, p, t = g.length; t; q = parseInt(Math.random() * t), p = g[--t], g[t] = g[q], g[q] = p);
 
 function fadeInGra() {
@@ -84,5 +84,6 @@ $('#graphics-container').imagesLoaded( function() {
 //         event.target.setPlaybackQuality('hd720');
 //     }
 // }
+
 
 });
