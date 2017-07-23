@@ -149,63 +149,41 @@ body {
   width: 100vw;
   height: 400px; }
 
-.content-wrapper .about-content .container .row .text-wrapper .about-header {
-  font-family: 'bebas-neue', sans-serif;
-  color: #ECF0F1;
-  font-size: 60px;
-  text-transform: uppercase; }
-  @media (max-width: 590px) {
-    .content-wrapper .about-content .container .row .text-wrapper .about-header {
-      font-size: 45px; } }
-  @media (max-width: 480px) {
-    .content-wrapper .about-content .container .row .text-wrapper .about-header {
-      font-size: 35px; } }
-.content-wrapper .about-content .container .row .text-wrapper .about-text {
-  font-size: 35px;
-  font-family: 'bebas-neue', sans-serif;
-  color: white; }
-  @media (max-width: 992px) {
-    .content-wrapper .about-content .container .row .text-wrapper .about-text {
-      font-size: 25px; } }
-  @media (max-width: 740px) {
-    .content-wrapper .about-content .container .row .text-wrapper .about-text {
-      font-size: 22px; } }
-  @media (max-width: 630px) {
-    .content-wrapper .about-content .container .row .text-wrapper .about-text {
-      font-size: 20px; } }
-  @media (max-width: 590px) {
-    .content-wrapper .about-content .container .row .text-wrapper .about-text {
-      font-size: 18px; } }
-  @media (max-width: 580px) {
-    .content-wrapper .about-content .container .row .text-wrapper .about-text {
-      font-size: 16px; } }
-.content-wrapper .about-content .container .row .image-wrapper .gallery-image {
-  float: right;
+.content-wrapper .about-content .container .row .text-wrapper {
+  font-size: 100%; }
+  @media (max-width: 991px) {
+    .content-wrapper .about-content .container .row .text-wrapper {
+      font-size: 90%; } }
+  @media (max-width: 767px) {
+    .content-wrapper .about-content .container .row .text-wrapper {
+      font-size: 80%; } }
+  @media (max-width: 600px) {
+    .content-wrapper .about-content .container .row .text-wrapper {
+      font-size: 60%; } }
+  @media (max-width: 550px) {
+    .content-wrapper .about-content .container .row .text-wrapper {
+      font-size: 50%; } }
+  .content-wrapper .about-content .container .row .text-wrapper .about-header {
+    font-family: 'bebas-neue', sans-serif;
+    color: #ECF0F1;
+    font-size: 4em;
+    text-transform: uppercase; }
+  .content-wrapper .about-content .container .row .text-wrapper .about-text {
+    font-size: 1.8em;
+    font-family: 'bebas-neue', sans-serif;
+    color: white; }
+.content-wrapper .about-content .container .row .image-wrapper {
   max-width: 370px;
-  height: auto;
+  float: right;
   border-width: 2px;
   border-color: #9a9a9a;
   border-style: solid; }
-  @media (max-width: 992px) {
-    .content-wrapper .about-content .container .row .image-wrapper .gallery-image {
-      max-width: 300px; } }
-  @media (max-width: 740px) {
-    .content-wrapper .about-content .container .row .image-wrapper .gallery-image {
-      max-width: 250px; } }
-  @media (max-width: 630px) {
-    .content-wrapper .about-content .container .row .image-wrapper .gallery-image {
-      max-width: 225px; } }
-  @media (max-width: 590px) {
-    .content-wrapper .about-content .container .row .image-wrapper .gallery-image {
-      max-width: 200px; } }
-  @media (max-width: 480px) {
-    .content-wrapper .about-content .container .row .image-wrapper .gallery-image {
-      max-width: 175px; } }
 .content-wrapper .about-content .container .social .instagram {
   height: 100%;
   margin-left: 40px;
   border: 2px solid #9a9a9a;
-  background-color: #4a4a4a; }
+  background-color: #4a4a4a;
+  overflow: hidden; }
   @media (max-width: 700px) {
     .content-wrapper .about-content .container .social .instagram {
       max-width: 205px; } }
@@ -227,12 +205,18 @@ body {
     border-bottom: 2px solid #9a9a9a; }
     @media (max-width: 700px) {
       .content-wrapper .about-content .container .social .instagram a img {
-        width: 200px;
-        height: auto; } }
+        width: auto;
+        height: 150px; } }
   .content-wrapper .about-content .container .social .instagram .grid-content {
     display: inline-block;
     margin-top: 5px;
     padding-left: 15px; }
+    @media (max-width: 700px) {
+      .content-wrapper .about-content .container .social .instagram .grid-content {
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; } }
     .content-wrapper .about-content .container .social .instagram .grid-content p {
       color: #DADFE1;
       font-family: 'Raleway', sans-serif; }
