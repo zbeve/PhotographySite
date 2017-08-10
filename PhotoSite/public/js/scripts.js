@@ -17,31 +17,27 @@ $(window).on('resize', function (){
 });
 
 // GALLERY ISOTOPE PLUGIN FOR RESPONSIVE DISPLAY
-$('#grid').isotope({
-  itemSelector: '.gallery-image-container',
-  layoutMode: 'masonry',
-  masonry: {
-    isFitWidth: true,
-    // columnWidth: '.gallery-image-container'
-  }
-});
-
 $('#column-1').imagesLoaded( function() {
-  $('#grid').isotope('layout');
+  $('#grid').isotope({
+    itemSelector: '.gallery-image-container',
+    layoutMode: 'masonry',
+    masonry: {
+      isFitWidth: true,
+      // columnWidth: '.gallery-image-container'
+    }
+  });
 });
 
 // GRAPHICS PAGE ISOTOPE
-$('#graphics-grid').isotope({
-  itemSelector: '.graphics-image-container',
-  layoutMode: 'masonry',
-  masonry: {
-    isFitWidth: true,
-    columnWidth: '.graphics-image-container'
-  }
-});
-
 $('#g-column-1').imagesLoaded( function() {
-  $('#grphics-grid').isotope('layout');
+  $('#graphics-grid').isotope({
+    itemSelector: '.graphics-image-container',
+    layoutMode: 'masonry',
+    masonry: {
+      isFitWidth: true,
+      columnWidth: '.graphics-image-container'
+    }
+  });
 });
 
 // LOAD HOMEPAGE IMAGES BEFORE DISPLAY
@@ -78,19 +74,31 @@ $('#graphics-container').imagesLoaded( function() {
 
 $('#social-feed').slick({
   dots: true,
+  arrows: true,
   infinite: true,
   speed: 2000,
   centerMode: true,
   variableWidth: true,
   centerPadding: '60px',
   slidesToShow: 3,
-  autoplay: true,
-  autoplaySpeed: 4000,
+  // autoplay: true,
+  // autoplaySpeed: 4000,
   responsive: [
+    // {
+    //   breakpoint: 875,
+    //   settings: {
+    //     arrows: true,
+    //     dots: true,
+    //     centerMode: true,
+    //     centerPadding: '40px',
+    //     slidesToShow: 3
+    //   }
+    // },
     {
-      breakpoint: 768,
+      breakpoint: 961,
       settings: {
         arrows: false,
+        dots: false,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 3
@@ -99,6 +107,7 @@ $('#social-feed').slick({
     {
       breakpoint: 480,
       settings: {
+        dots: false,
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
