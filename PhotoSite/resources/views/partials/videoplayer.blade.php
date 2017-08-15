@@ -7,7 +7,7 @@
           <div class="video-shell">
             <h1>{{ $video->name }}</h1>
             <a href="https://player.vimeo.com/video/{{ $video->code }}?color=ffffff" data-fancybox></a>
-            <img class="video-thumbnail" src="/assets/video/{{ $video->thumbnail }}">
+            <img class="video-thumbnail" src="/assets/video/{{ $video->thumbnail }}.jpg">
           </div>
         </div>
       @endforeach

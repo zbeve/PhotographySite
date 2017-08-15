@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>@yield('title')</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Roboto|Raleway" rel="stylesheet">
     <!-- Styling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css">
@@ -32,6 +35,7 @@
     <script src="https://use.fontawesome.com/6b5330038a.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.0.1/lazyload.min.js"></script>
     <script src="../js/scripts.js"></script>
   </body>
 </html>

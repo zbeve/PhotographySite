@@ -3,6 +3,8 @@
 @section('content')
 
 @include('partials.aboutme')
+@include('partials.email')
 @include('partials.instafeed')
+@include('partials.footer')
 
 @endsection

@@ -3,5 +3,7 @@
 @section('content')
 
 @include('partials.gallery')
+@include('partials.email')
+@include('partials.footer')
 
 @endsection

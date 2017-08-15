@@ -17,25 +17,23 @@ $(window).on('resize', function (){
 });
 
 // GALLERY ISOTOPE PLUGIN FOR RESPONSIVE DISPLAY
-$('#column-1').imagesLoaded( function() {
+$('.visible').imagesLoaded( function() {
   $('#grid').isotope({
     itemSelector: '.gallery-image-container',
     layoutMode: 'masonry',
     masonry: {
       isFitWidth: true,
-      // columnWidth: '.gallery-image-container'
     }
   });
 });
 
 // GRAPHICS PAGE ISOTOPE
-$('#g-column-1').imagesLoaded( function() {
+$('.visible').imagesLoaded( function() {
   $('#graphics-grid').isotope({
     itemSelector: '.graphics-image-container',
     layoutMode: 'masonry',
     masonry: {
       isFitWidth: true,
-      columnWidth: '.graphics-image-container'
     }
   });
 });
@@ -45,30 +43,17 @@ $('#welcome-carousel').imagesLoaded( function() {
   $('#welcome-container').addClass('ready');
 });
 
-// GALLERY RANDOM FADE IN
-var v = $('.gallery-image-container'), cur = 0;
+// RANDOM FADE IN
+var v = $('.visible'), cur = 0;
 for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
 
 function fadeIn() {
   v.eq(cur++).addClass('active');
-  if(cur != v.length) setTimeout(fadeIn, 50);
+  if(cur != v.length) setTimeout(fadeIn, 150);
 }
 
-$('#gallery-container').imagesLoaded( function() {
+$('.visible').imagesLoaded( function() {
   fadeIn();
-});
-
-// GRAPHICS RANDOM FADE IN
-var g = $('.graphics-image-container'), curr = 0;
-for(var q, p, t = g.length; t; q = parseInt(Math.random() * t), p = g[--t], g[t] = g[q], g[q] = p);
-
-function fadeInGra() {
-  g.eq(curr++).addClass('active');
-  if(curr != g.length) setTimeout(fadeInGra, 300);
-}
-
-$('#graphics-container').imagesLoaded( function() {
-  fadeInGra();
 });
 
 
@@ -81,19 +66,9 @@ $('#social-feed').slick({
   variableWidth: true,
   centerPadding: '60px',
   slidesToShow: 3,
-  // autoplay: true,
-  // autoplaySpeed: 4000,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
-    // {
-    //   breakpoint: 875,
-    //   settings: {
-    //     arrows: true,
-    //     dots: true,
-    //     centerMode: true,
-    //     centerPadding: '40px',
-    //     slidesToShow: 3
-    //   }
-    // },
     {
       breakpoint: 961,
       settings: {
