@@ -458,6 +458,13 @@ body .fancybox-container .fancybox-inner .fancybox-caption-wrap .fancybox-captio
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif; }
 
+.navbar-default .navbar-nav .active a {
+  background-color: #757575;
+  color: #DADFE1; }
+.navbar-default .navbar-nav .active:hover a {
+  background-color: #757575;
+  color: #DADFE1; }
+
 .navbar {
   border: none;
   background-color: #ECF0F1;
@@ -475,9 +482,9 @@ body .fancybox-container .fancybox-inner .fancybox-caption-wrap .fancybox-captio
     .navbar ul li {
       transition: background-color 0.7s ease; }
       .navbar ul li:hover {
-        background-color: #757575; }
+        background-color: #9a9a9a; }
         .navbar ul li:hover a {
-          color: #DADFE1 !important; }
+          color: #ffffff !important; }
 
 #contact-button {
   margin-bottom: 70px;

@@ -606,6 +606,22 @@ body {
 }
 
 // NAVBAR STYLING
+.navbar-default {
+  .navbar-nav {
+    .active {
+        a {
+          background-color: $Light_Grey;
+          color: $Light_White;
+        }
+        &:hover {
+          a {
+            background-color: $Light_Grey;
+            color: $Light_White;
+          }
+        }
+    }
+  }
+}
 .navbar {
   border: none;
   background-color: $Off_White;
@@ -628,9 +644,9 @@ body {
     li {
       transition: background-color 0.7s ease;
       &:hover {
-        background-color: $Light_Grey;
+        background-color: $Lighter_Grey;
         a {
-          color: $Light_White !important;
+          color: $White !important;
         }
       }
     }

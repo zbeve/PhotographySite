@@ -13,10 +13,10 @@
     </div>
     <div class="collapse navbar-collapse" id="navigationbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/photography">Photography</a></li>
-        <li><a href="/graphics">Graphics</a></li>
-        <li><a href="/video">Video</a></li>
-        <li><a href="/about">About</a></li>
+        <li class="{{ Request::is('photography') ? 'active' : '' }}"><a href="{{ url('photography') }}">Photography</a></li>
+        <li class="{{ Request::is('graphics') ? 'active' : '' }}"><a href="{{ url('graphics') }}">Graphics</a></li>
+        <li class="{{ Request::is('video') ? 'active' : '' }}"><a href="{{ url('video') }}">Video</a></li>
+        <li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{ url('about') }}">About</a></li>
       </ul>
     </div>
   </div>
